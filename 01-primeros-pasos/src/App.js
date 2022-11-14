@@ -20,7 +20,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          bienvenido al master en react
+          Empezando en react
         </p>
         <hr/>
         <EventosComponentes/>
