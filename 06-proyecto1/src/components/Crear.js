@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { guardarenStorage } from '../helpers/GuardarenStorege';
 
-export const Crear = () => {
+export const Crear = ({setlistadostate}) => {
 
   const TituloComponente = "Añadir Pelicula";
 
@@ -33,6 +33,11 @@ export const Crear = () => {
 
     //Guardar estado  
     setpelistate(peli);
+
+    //actualizar el estado del listado principal
+    setlistadostate( elementos=>{
+      return [...elementos, peli];
+    }) 
 
     //guaradar en el almacenamiento local
     guardarenStorage("pelis",peli);

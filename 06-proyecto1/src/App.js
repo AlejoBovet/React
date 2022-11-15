@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Buscador } from "./components/Buscador";
 import { Crear } from "./components/Crear";
 import { Listado } from "./components/Listado";
@@ -5,6 +6,9 @@ import { Listado } from "./components/Listado";
 
 
 function App() {
+
+    const [listadostate, setlistadostate] = useState([]);
+
   return (
 
     <div className="layout">
@@ -31,14 +35,14 @@ function App() {
         <section id="content" className="content">
 
             {/*aqui van las peliculas*/}
-            <Listado/>
+            <Listado listadostate={listadostate} setlistadostate={setlistadostate}/>
         </section>
 
         {/*Barra lateral*/}
         <aside className="lateral">
           <Buscador/>  
 
-          <Crear/>
+          <Crear setlistadostate={setlistadostate}/>
 
           
         </aside>
