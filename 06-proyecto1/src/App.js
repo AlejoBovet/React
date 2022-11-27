@@ -40,7 +40,7 @@ function App() {
 
         {/*Barra lateral*/}
         <aside className="lateral">
-          <Buscador/>  
+          <Buscador listadostate={listadostate} setlistadostate={setlistadostate}/>  
 
           <Crear setlistadostate={setlistadostate}/>
 
@@ -49,7 +49,7 @@ function App() {
 
         {/*Pie de página*/}
         <footer className="footer">
-            &copy; Máster en React - <a href="https://victorroblesweb.es">victorroblesweb.es</a>
+            
         </footer>
 
     </div>
