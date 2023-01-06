@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Contacto = () => {
   return (
-    <div>
-      <h1>Contacto</h1>
+    <div className='page'>
+      <h1 className='heading'>Contacto</h1>
 
       <form className='contact' action='mailto: alej@alej.cl'>
         <input type="text" placeholder="Nombre"/>

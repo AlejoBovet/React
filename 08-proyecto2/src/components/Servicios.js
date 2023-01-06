@@ -2,7 +2,8 @@ import React from 'react'
 
 export const Servicios = () => {
   return (
-    <div>
+    <div className='page'>
+      <h1 className='heading'> Servicios </h1>
       <section>
         <article>
         <h2>Front-End</h2>

@@ -82,8 +82,8 @@ code {
 }
 
 .footer{
-  min-height: 150px;
-  line-height: 120px;
+  min-height: 40px;
+  line-height: 7px;
   text-align: center;
   font-size: 14px;
   margin-top: 35px;
@@ -109,7 +109,9 @@ code {
   font-weight: lighter;
 }
 
-.home a{
+.home a
+input [type="submit"],
+button{
   padding: 7px;
   border-radius: 5px;
   color: white;
@@ -118,13 +120,42 @@ code {
   transition: all 300ms;
 }
 
-.home a:hover{
-  background-color: greenyellow;
-}
 
+
+.page .heading,
 .home .heading{
   font-size: 30px;
   font-weight: 500;
   color: black;
   margin-bottom: 0px;
+}
+
+.page .heading{
+  font-size: 55px;
+  font-weight: bold;
+}
+
+
+input[type="text"],
+textarea{
+  padding: 15px;
+  display: block;
+  width: 150px;
+  margin-top: 25px;
+}
+
+input[type="submit"],
+button{
+  padding: 15px;
+  border-radius: 0px;
+  color: white;
+  background-color: #fa4529;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.home a:hover,
+input [type="submit"]:hover,
+button:hover{
+  background-color: rgb(26, 137, 26);
 }
